@@ -1,0 +1,125 @@
+.footer {
+  background: black;
+}
+
+.footer-container {
+  display: grid;
+  padding: 120px 20px 60px 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  align-items: center;
+  max-width:  1200px;
+  margin : 0 auto;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #ffffff ;
+}
+
+.footer-contact li {
+  font-weight: bold;
+  font-size: 14pt;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.footer-contact li a {
+  color: currentColor;
+}
+
+.icon{
+  max-width: 25px;
+  max-height: 25px;
+  width: auto;
+  height: auto;
+}
+
+.footer-copy {
+  font-size: 1rem;
+  color: #646363;
+  grid-column:  1 / -1;
+}
+
+.f-contact {
+  color:#fdfdfd;
+}
+
+.f-contact:hover{
+  color:#87e816;
+}
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-contact li {
+    font-size: 1.5rem;
+  }
+}
+
+.forms{
+  width: 400px;
+  padding: 30px;
+  border:1px solid #ffffff;
+  margin: 0 10px 30px;
+  border-radius: 15px;
+}
+
+.forms.align-left {
+  float: left;
+  margin-left: auto;
+}
+
+.forms p {
+  width: 100%;
+  font-size: 1.5em;
+}
+.field {
+  width: 100%;
+  margin: 15px 0;
+
+}
+.field label,
+.field span {
+  padding-left: 10px;
+  font-size: 1.1em;
+  display: block;
+  width: 100%;
+}
+.radiobox label {
+  width: auto;
+  display: inline-block;
+}
+input[type=text],
+input[type=email],
+textarea{
+  width: 100%;
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+textarea{
+  line-height: 20px;
+  padding: 10px;
+  height: 90px;
+  resize: none;
+}
+input[type=submit]{
+  display: block;
+  background-color: #67dd0a;
+  height: 35px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+}
