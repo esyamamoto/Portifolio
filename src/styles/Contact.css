@@ -1,0 +1,32 @@
+#contact {
+    background: rgba(0, 0, 0, 0.519);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.082);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+#contact header h2 {
+    color: var(--color-text);
+    font-size: 3.5rem;
+}
+
+#contact .socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+#contact .socials a {
+    font-size: 4rem;
+    color: #d8d8d8;
+    transition: all 200ms ease-in-out;
+}
+
+#contact .socials a:hover {
+    transform: scale(1.1);
+}
+
+#contact .socials ion-icon {
+    filter: drop-shadow(2px 4px 20px #1b1b1b);
+}

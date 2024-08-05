@@ -1,0 +1,79 @@
+#competence {
+  background-color: #050505;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+#competence header h2 {
+  font-size: 3.5rem;
+  color: var(--color-text);
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+#competence .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#competence .card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  
+  /* From https://css.glass */
+  background: rgba(39, 39, 39, 0.1);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  min-height: 30rem;
+  box-shadow: 5px 5px 12px #a5a5a556;
+}
+
+#competence .description {
+  font-family: "Poppins", sans-serif;
+  color: #c2c2c2;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+#competence h3 {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-text);
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+#competence .expandable-section {
+  position: relative;
+}
+
+#competence .additionalDescription {
+  font-family: "Poppins", sans-serif;
+  color: var(--p-color);
+  font-size: 1.3rem;
+  font-weight: 300;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+#competence .additionalDescription.expanded {
+  max-height: 200px;
+}
+
+#competence .toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--p-color);
+  padding: 0;
+  margin-top: 0.5rem;
+}

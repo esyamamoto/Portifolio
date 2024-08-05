@@ -1,0 +1,115 @@
+#about {
+  position: relative; 
+  background-color: #050505;
+  padding: 10rem 2.4rem;
+  overflow: hidden;
+}
+
+#about .wrapper {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#about .image {
+  margin-bottom: 3rem;
+}
+
+#about .image img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 100%;
+  max-width: 25rem;
+  box-shadow: 19px 19px 30px #1818182d, -19px -19px 30px #2020201f;
+  animation: move 3s ease-in-out infinite;
+}
+
+#about .content {
+  text-align: center;
+  width: 100%;
+}
+
+#about .content header h2 {
+  font-size: 4rem;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+  margin-top: 5rem;;
+}
+
+#about .content .text {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#about .content .text p {
+  font-weight: 300;
+  color: #6e6e6e;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+}
+
+#about .content .text p span {
+  font-weight: 600;
+}
+
+#about .content .text ul {
+  margin-top: 3rem;
+  padding-left: 0;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#about .content .text ul li {
+  font-size: 1.4rem;
+  color: #9b9b9b;
+  list-style: disc;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+#about .content .text a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+#about .content .text a button {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  outline: 1px solid var(--color-text);
+  color: var(--color-text);
+  font-weight: 700;
+  border: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease-in-out;
+}
+
+#about .content .text a button:hover {
+  background-color: var(--color-text);
+  color: #111111;
+  box-shadow: 5px 5px 10px #000;
+  cursor: pointer;
+}
+
+#about .content .text a button ion-icon {
+  color: var(--color-text);
+  font-size: 2rem;
+}
+
+#about .content .text a button:hover ion-icon {
+  color: #111111;
+  animation: moveicon 2s ease-in-out infinite;
+}
