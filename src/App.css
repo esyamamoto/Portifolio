@@ -1,21 +1,20 @@
+/* Estilos existentes */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: "Roboto Mono", monospace;
 }
 
 :root {
   font-size: 62.5%;
   --nav-height: 7.2rem;
-
   --primary-color: #006DDD;
   --secondary-color: #004388;
   --tertinary-color: #001326;
   --color-text: #e4e4e4;
   --p-color: #6e6e6e;
-}  
+}
 
 html {
   scroll-behavior: smooth;
@@ -43,14 +42,12 @@ ul {
 .wrapper {
   width: min(50rem, 100%);
   margin-inline: auto;
-
   padding-inline: 2.4rem;
 }
 
 .wrapper-home {
   width: min(130rem, 100%);
   margin-inline: auto;
-
   padding-inline: 2.4rem;
 }
 
@@ -59,7 +56,6 @@ section {
 }
 
 /*====  scrollbar ============================ */
-
 ::-webkit-scrollbar {
   width: 1rem;
   background-color: #111111;
@@ -76,6 +72,41 @@ section {
   position: fixed;
   width: 100%;
   height: 100%;
-  height: 100%;
   top: 0;
+}
+
+/* Light Mode */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light-mode .wrapper {
+  background-color: #f9f9f9; 
+}
+
+body.light-mode ::-webkit-scrollbar {
+  background-color: #f0f0f0; 
+}
+
+body.light-mode ::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #000000; 
+  color: #e4e4e4; 
+}
+
+body.dark-mode .wrapper {
+  background-color: #1a1a1a; 
+}
+
+body.dark-mode ::-webkit-scrollbar {
+  background-color: #111111; 
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background-color: #333333; 
+}
 }

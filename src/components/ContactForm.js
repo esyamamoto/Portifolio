@@ -77,7 +77,7 @@ const ContactForm = () => {
 
   return (
     <section id="contact-form">
-      <h2>Contact Me</h2>
+      <h2>Me contate:</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>

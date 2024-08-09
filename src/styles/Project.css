@@ -1,15 +1,92 @@
-/* PROJECTS =================== */
-#projects {
-    overflow: hidden;
+/* Projects.module.css */
+
+/* Modo escuro */
+.dark-mode #projects {
     background: rgba(0, 0, 0, 0.519);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.082);
+    color: var(--color-text);
+  }
+  
+  .dark-mode #projects img.looper {
+    filter: brightness(0.1);
+  }
+  
+  .dark-mode .carousel-button {
+    background: rgb(255, 255, 255);
+    color: #fff;
+  }
+  
+  .dark-mode .card {
+    background: #222;
+    color: #d8d8d8;
+  }
+  
+  .dark-mode .card .text p {
+    color: var(--p-color);
+  }
+  
+  .dark-mode .card .github-button {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode .card .github-button:hover {
+    background-color: #444;
+  }
+  
+  .dark-mode .card .github-button svg path {
+    stroke: #fff;
+  }
+  
+  /* Modo claro */
+  .light-mode #projects {
+    background: #ffffff;
+    color: #000;
+  }
+  
+  .light-mode #projects img.looper {
+    filter: brightness(1);
+  }
+  
+  .light-mode .carousel-button {
+    background: rgba(88, 88, 88, 0.5);
+    color: #000;
+  }
+  
+  .light-mode .card {
+    background: #c7c7c7;
+    color: #333;
+  }
+  
+  .light-mode .card .text p {
+    color: #333;
+  }
+  
+  .light-mode .card .github-button {
+    background-color: #d8d7d7;
+    color: #333;
+    border: 1px solid #333;
+  }
+  
+  .light-mode .card .github-button:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .light-mode .card .github-button svg path {
+    stroke: #333;
+  }
+  
+  /* Restante do CSS */
+  #projects {
+    overflow: hidden;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     position: relative;
     padding: 2rem;
-}
-
-#projects img.textoPortfolio {
+    
+  }
+  
+  #projects img.textoPortfolio {
     width: 100%;
     position: absolute;
     top: 0;
@@ -17,184 +94,167 @@
     transform: translate(-50%);
     z-index: -1;
     opacity: 0.02;
-}
-
-#projects img.looper {
-    position: absolute;
-    animation: rotate infinite linear 20s;
-    z-index: -1;
-    filter: brightness(0.1);
-}
-
-#projects img.looper.um {
+  }
+  
+  #projects img.looper.um {
     bottom: 91%;
     right: -24rem;
-}
-
-#projects img.looper.dois {
+  }
+  
+  #projects img.looper.dois {
     bottom: 45%;
     left: -24rem;
-}
-
-#projects img.looper.tres {
+  }
+  
+  #projects img.looper.tres {
     bottom: 10%;
     right: -24rem;
-}
-
-@keyframes rotate {
+  }
+  
+  @keyframes rotate {
     0% {
-        transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);
+      transform: rotate(360deg);
     }
-}
-
-#projects header h2 {
+  }
+  
+  #projects header h2 {
     line-height: 1.1;
-    color: var(--color-text);
     font-size: 3.5rem;
     margin-bottom: 1rem;
-}
-
-#projects header {
+  }
+  
+  #projects header {
     margin-bottom: 4rem;
-}
-
-#projects h3 {
+  }
+  
+  #projects h3 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #d8d8d8;
     margin: 2rem 0;
-}
-
-#projects p {
+  }
+  
+  #projects p {
     font-family: "Poppins", sans-serif;
-    color: var(--p-color);
     font-size: 1.6rem;
-}
-
-/* Carousel */
-.carousel {
+  }
+  
+  /* Carousel */
+  .carousel {
     position: relative;
     width: 100%;
     overflow: hidden;
-}
-
-.carousel-wrapper {
+  }
+  
+  .carousel-wrapper {
     display: flex;
     transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
+  }
+  
+  .carousel-item {
     min-width: 100%;
     box-sizing: border-box;
-}
-
-.carousel-button {
+  }
+  
+  .carousel-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
     border: none;
     border-radius: 50%;
     padding: 1rem;
     cursor: pointer;
     font-size: 2rem;
     z-index: 10;
-}
-
-.carousel-button.left {
+  }
+  
+  .carousel-button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .carousel-button.left {
     left: 10px;
-}
-
-.carousel-button.right {
+  }
+  
+  .carousel-button.right {
     right: 10px;
-}
-
-/* Card */
-.card {
+  }
+  
+  /* Card */
+  .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: #222;
     border-radius: 10px;
     padding: 2rem;
     transition: transform 0.3s ease;
     margin: 0 auto;
     width: 90%;
     max-width: 400px;
-    position: relative; /* Adicionado para posicionar o botão GitHub */
-}
-
-.card .image img {
+    position: relative;
+  }
+  
+  .card .image img {
     width: 100%;
     border-radius: 10px;
     transition: all 200ms ease-in-out;
-    filter: drop-shadow(2px 4px 20px #1b1b1b);
     margin-bottom: 1rem;
-}
-
-.card:hover {
+  }
+  
+  .card:hover {
     transform: translateY(-10px);
-}
-
-.card .text h3 {
+  }
+  
+  .card .text h3 {
     font-size: 2rem;
     font-weight: 700;
-    color: #d8d8d8;
     margin-bottom: 0.5rem;
-}
-
-.card .text p {
+  }
+  
+  .card .text p {
     font-family: "Poppins", sans-serif;
-    color: var(--p-color);
     font-size: 1.6rem;
-}
-
-.card .technologies {
+  }
+  
+  .card .technologies {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-}
-
-.technology {
+  }
+  
+  .technology {
     font-size: 1rem;
-    background-color: #3a3a3a;
+    background-color: #5c5b5b;
     padding: 5px 10px;
     border-radius: 5px;
     color: #ffffff;
     margin: 5px;
     white-space: nowrap;
-}
-
-.technology::after {
+  }
+  
+  .technology::after {
     content: " ";
-}
-
-/* Botão GitHub */
-.card .github-button {
+  }
+  
+  /* Botão GitHub */
+  .card .github-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #333;
-    color: #fff;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 50px;
     text-decoration: none;
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: bold;
     transition: background-color 0.3s ease;
-}
-
-.card .github-button:hover {
-    background-color: #444;
-}
-
-.card .github-button svg {
+  }
+  
+  .card .github-button svg {
     margin-right: 5px;
-}
+  }
+  

@@ -1,0 +1,26 @@
+/* ThemeSwitch.css */
+
+.theme-switch-button {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Modo escuro */
+  .dark-mode .theme-switch-button {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Modo claro */
+  .light-mode .theme-switch-button {
+    background-color: #494949;
+    color: #ffffff;
+  }

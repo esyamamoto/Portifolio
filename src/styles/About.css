@@ -1,3 +1,74 @@
+.dark-mode #about {
+  background-color: #050505;
+  color: #d8d7d7;
+}
+
+.dark-mode #about .image img {
+  box-shadow: 19px 19px 30px #535353, -19px -19px 30px #2020201f;
+}
+
+.dark-mode #about .content header h2 {
+  color: var(--color-text);
+}
+
+.dark-mode #about .content .text p {
+  color: #b8b8b8;
+}
+
+.dark-mode #about .content .text ul li {
+  color: #9b9b9b;
+}
+
+.dark-mode #about .content .text a {
+  color: var(--color-text);
+}
+
+.dark-mode #about .content .text a button {
+  border: 1px solid var(--color-text);
+  color: var(--color-text);
+}
+
+.dark-mode #about .content .text a button:hover {
+  background-color: var(--color-text);
+  color: #1c2dca;
+}
+
+.light-mode #about {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light-mode #about .image img {
+  box-shadow: 19px 19px 30px rgb(85, 85, 85), -19px -19px 30px #f0f0f0;
+}
+
+.light-mode #about .content header h2 {
+  color: #111111;
+}
+
+.light-mode #about .content .text p {
+  color: #111111;
+}
+
+.light-mode #about .content .text ul li {
+  color: #111111;
+}
+
+.light-mode #about .content .text a {
+  color: #111111;
+}
+
+.light-mode #about .content .text a button {
+  border: 1px solid var(--color-text);
+  color: #111111;
+}
+
+.light-mode #about .content .text a button:hover {
+  background-color: var(--color-text);
+  color:  #1c2dca;
+}
+
+
 #about {
   position: relative; 
   background-color: #050505;
@@ -16,15 +87,18 @@
 
 #about .image {
   margin-bottom: 3rem;
-  background: linear-gradient(to bottom, rgba(0,0,0,0), red, orange, rgba(0,0,0,0));
 }
 
 #about .image img {
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 10%;
   width: 100%;
   max-width: 25rem;
+  animation: move 3s ease-in-out infinite;
+  border-radius: 50%;
+  box-shadow:  19px 19px 30px #535353,
+  -19px -19px 30px #2020201f;
+  
   animation: move 3s ease-in-out infinite;
 }
 
@@ -99,17 +173,8 @@
 
 #about .content .text a button:hover {
   background-color: var(--color-text);
-  color: #111111;
+  color:  #1c2dca;
   box-shadow: 5px 5px 10px #000;
   cursor: pointer;
 }
 
-#about .content .text a button ion-icon {
-  color: var(--color-text);
-  font-size: 2rem;
-}
-
-#about .content .text a button:hover ion-icon {
-  color: #111111;
-  animation: moveicon 2s ease-in-out infinite;
-}

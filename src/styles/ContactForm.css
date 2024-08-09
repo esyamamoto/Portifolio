@@ -1,60 +1,109 @@
+/* ContactForm.module.css */
+
+/* Modo escuro */
+.dark-mode #contact-form {
+  background-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-image: linear-gradient(45deg, #f0db4f, #ec6231, #264de4) 1;
+  color: #ffffff;
+}
+
+.dark-mode #contact-form h2 {
+  color: #ffffff;
+}
+
+.dark-mode #contact-form .form-group {
+  color: #ffffff;
+}
+
+.dark-mode #contact-form .form-group input,
+.dark-mode #contact-form .form-group textarea {
+  background-color: #333;
+  border: 1px solid #555;
+  color: #ffffff;
+}
+
+.dark-mode #contact-form .submit-button {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.dark-mode #contact-form .submit-button:hover {
+  background-color: #1c2dca62;
+}
+
+/* Modo claro */
+.light-mode #contact-form {
+  background-color: #ffffff;
+  border-style: solid;
+  border-image: linear-gradient(45deg, #f0db4f, #ec6231, #264de4) 1;
+  color: #000000;
+}
+
+.light-mode #contact-form h2 {
+  color: #000000;
+}
+
+.light-mode #contact-form .form-group {
+  color: #000000;
+}
+
+.light-mode #contact-form .form-group input,
+.light-mode #contact-form .form-group textarea {
+  background-color: #dbdbdb;
+  border: 1px solid #ddd;
+  color: #000000;
+}
+
+.light-mode #contact-form .submit-button {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.light-mode #contact-form .submit-button:hover {
+  background-color: #1c2dca62;
+}
+
+/* Estilos gerais */
 #contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    margin-bottom: 4rem;
-    padding: 1rem;
-    background-color: rgb(0, 0, 0);
-    border-style: solid;
-    border-image: linear-gradient(45deg, #f0db4f, #ec6231, #264de4) 1;
-  }
-  
-  #contact-form h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #ffffff;
-    font-size: 3rem;
-  }
-  
-  #contact-form .form-group {
-    margin-bottom: 1rem;
-    color: #ffffff;
-  }
-  
-  #contact-form .form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  
-  #contact-form .form-group input,
-  #contact-form .form-group textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #808080;
-    border-radius: 4px;
-  }
-  
-  #contact-form .form-group textarea {
-    resize: vertical;
-    min-height: 100px;
-  }
-  
-  #contact-form .submit-button {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: #ffffff;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  #contact-form .submit-button:hover {
-    background-color: #0056b3;
-  }
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 4rem;
+}
 
+#contact-form .form-group {
+  margin-bottom: 1rem;
+}
 
+#contact-form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#contact-form .form-group input,
+#contact-form .form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+
+#contact-form .form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+#contact-form .submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

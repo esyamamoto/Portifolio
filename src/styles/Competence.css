@@ -1,12 +1,77 @@
-#competence {
+/* Competence.module.css */
+
+/* Modo escuro */
+.dark-mode #competence {
   background-color: #050505;
+  color: #d8d7d7; /* Texto em modo escuro */
+}
+
+.dark-mode #competence header h2 {
+  color: var(--color-text); /* Texto do cabeçalho */
+}
+
+.dark-mode #competence .card {
+  background: rgba(39, 39, 39, 0.1);
+  border-image: linear-gradient(45deg, #f0db4f, #ec6231, #264de4) 1;
+}
+
+.dark-mode #competence .description {
+  color: #d8d7d7;
+}
+
+.dark-mode #competence h3 {
+  color: var(--color-text);
+}
+
+.dark-mode #competence .content {
+  color: #b3b3b3;
+}
+
+.dark-mode #competence .toggle-button {
+  background: rgba(212, 212, 212, 0.5);
+  color: #ffffff;
+}
+
+/* Modo claro */
+.light-mode #competence {
+  background-color: #ffffff;
+  color: #000000; 
+}
+
+.light-mode #competence header h2 {
+  color:#000000;
+}
+
+.light-mode #competence .card {
+  background: rgba(199, 199, 199, 0.342); 
+  border-image: linear-gradient(45deg, #f0db4f, #ec6231, #264de4) 1;
+}
+
+.light-mode #competence .description {
+  color: #000000;
+}
+
+.light-mode #competence h3 {
+  color:  #000000;
+}
+
+.light-mode #competence .content {
+  color: #5c5b5b;
+}
+
+.light-mode #competence .toggle-button {
+  background: rgba(185, 185, 185, 0.5); /* Fundo mais claro */
+  color: #000000;
+}
+
+/* Estilos gerais */
+#competence {
   overflow: hidden;
   padding: 2rem;
 }
 
 #competence header h2 {
   font-size: 3.5rem;
-  color: var(--color-text);
   margin-bottom: 5rem;
   text-align: center;
 }
@@ -28,7 +93,6 @@
   align-items: center;
   text-align: center;
   gap: 1.5rem;
-  background: rgba(39, 39, 39, 0.1);
   backdrop-filter: blur(3.9px);
   -webkit-backdrop-filter: blur(3.9px);
   border-radius: 1rem;
@@ -36,7 +100,6 @@
   min-height: 20rem;
   border-width: 3px;
   border-style: solid;
-  border-image: linear-gradient(45deg, #f0db4f, #ec6231, #264de4) 1;
 }
 
 #competence .card:hover {
@@ -45,15 +108,12 @@
 
 #competence .description {
   font-family: "Poppins", sans-serif;
-  color: #d8d7d7;
   font-size: 1.3rem;
-  font-weight: 300;
   font-weight: bold;
 }
 
 #competence h3 {
   font-family: "Poppins", sans-serif;
-  color: var(--color-text);
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
@@ -65,7 +125,6 @@
 
 #competence .content {
   font-family: "Poppins", sans-serif;
-  color: #b3b3b3;
   font-size: 1.5rem;
   font-weight: 300;
   max-height: 0;
@@ -78,19 +137,17 @@
 }
 
 #competence .toggle-button {
-  background: #35353588;
   border: none; 
   cursor: pointer; 
-  font-size: 2.5rem; 
+  font-size: 1.5rem; 
+  margin-top: 1.5rem;
   margin-bottom: 5px;
-  color: #ffffff; 
   padding: 0.5rem; 
   border-radius: 45%;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.582); 
   transition: background-color 0.3s, box-shadow 0.3s; 
 }
 
 #competence .toggle-button:hover {
-  background-color: #4d2b2b; 
+  background-color: #1c2dca62; 
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
 }
