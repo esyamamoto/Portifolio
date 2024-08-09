@@ -69,8 +69,7 @@ const projectsData = {
             "CSS3",
             "API do PokeApi"
         ]
-    }
-    ,
+    },
     {
         id: 6,
         title: "Star Wars",
@@ -83,8 +82,7 @@ const projectsData = {
             "Hooks",
             "Context API",
         ]
-    }
-    ,
+    },
     {
         id: 7,
         title: "Music Favorite",
