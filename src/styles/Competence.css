@@ -14,38 +14,47 @@
 #competence .cards {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
 }
 
 #competence .card {
-  padding: 2rem;
+  width: 80%;
+  max-width: 600px; 
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  
-  /* From https://css.glass */
+  text-align: center;
+  gap: 1.5rem;
   background: rgba(39, 39, 39, 0.1);
   backdrop-filter: blur(3.9px);
   -webkit-backdrop-filter: blur(3.9px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 2rem;
+  border-radius: 1rem;
   margin-bottom: 2rem;
-  min-height: 30rem;
-  box-shadow: 5px 5px 12px #a5a5a556;
+  min-height: 20rem;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(45deg, #f0db4f, #ec6231, #264de4) 1;
+}
+
+#competence .card:hover {
+  transform: scale(1.05);
 }
 
 #competence .description {
   font-family: "Poppins", sans-serif;
-  color: #c2c2c2;
-  font-size: 1.6rem;
+  color: #d8d7d7;
+  font-size: 1.3rem;
   font-weight: 300;
+  font-weight: bold;
 }
 
 #competence h3 {
   font-family: "Poppins", sans-serif;
   color: var(--color-text);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
 }
@@ -54,26 +63,34 @@
   position: relative;
 }
 
-#competence .additionalDescription {
+#competence .content {
   font-family: "Poppins", sans-serif;
-  color: var(--p-color);
-  font-size: 1.3rem;
+  color: #b3b3b3;
+  font-size: 1.5rem;
   font-weight: 300;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
 }
 
-#competence .additionalDescription.expanded {
+#competence .content.expanded {
   max-height: 200px;
 }
 
 #competence .toggle-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  color: var(--p-color);
-  padding: 0;
-  margin-top: 0.5rem;
+  background: #35353588;
+  border: none; 
+  cursor: pointer; 
+  font-size: 2.5rem; 
+  margin-bottom: 5px;
+  color: #ffffff; 
+  padding: 0.5rem; 
+  border-radius: 45%;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.582); 
+  transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+#competence .toggle-button:hover {
+  background-color: #4d2b2b; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
 }

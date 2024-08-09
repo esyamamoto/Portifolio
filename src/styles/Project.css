@@ -6,6 +6,7 @@
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     position: relative;
+    padding: 2rem;
 }
 
 #projects img.textoPortfolio {
@@ -56,66 +57,15 @@
     margin-bottom: 1rem;
 }
 
-#projects header p {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.6rem;
-    color: var(--p-color);
-    font-weight: 600;
-}
-
 #projects header {
-    margin-bottom: 8rem;
-}
-
-#projects .cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10rem;
-}
-
-#projects .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: #222;
-    border-radius: 10px;
-    padding: 2rem;
-    transition: transform 0.3s ease;
-}
-
-#projects .card.left {
-    /* Estilos específicos para cards com class 'left' */
-}
-
-#projects .card.right {
-    /* Estilos específicos para cards com class 'right' */
-}
-
-#projects .image img {
-    width: 100%;
-    transition: all 200ms ease-in-out;
-    animation: move 2.5s infinite ease-in-out;
-    filter: drop-shadow(2px 4px 20px #1b1b1b);
     margin-bottom: 4rem;
-}
-
-#projects .card:hover {
-    transform: translateY(-10px);
-}
-
-#projects .image img:hover {
-    cursor: pointer;
-    filter: drop-shadow(1px 3px 15px #4646469d);
 }
 
 #projects h3 {
     font-size: 2.5rem;
     font-weight: 700;
     color: #d8d8d8;
-    margin-bottom: 0.5rem;
+    margin: 2rem 0;
 }
 
 #projects p {
@@ -124,46 +74,127 @@
     font-size: 1.6rem;
 }
 
-#projects .technologies {
-    margin-top: 2rem;
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
-#projects .technologies img {
-    font-size: 2.5rem;
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    margin: 0 0.5rem;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 10;
 }
 
-#projects .technologies img:nth-child(1) {
-    color: #f0db4f;
-    border-radius: 1rem;
+.carousel-button.left {
+    left: 10px;
 }
 
-#projects .technologies img:nth-child(2) {
-    color: #ec6231;
+.carousel-button.right {
+    right: 10px;
 }
 
-#projects .technologies img:nth-child(3) {
-    color: #264de4;
+/* Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #222;
+    border-radius: 10px;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 400px;
+    position: relative; /* Adicionado para posicionar o botão GitHub */
 }
 
-.technologies {
+.card .image img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 200ms ease-in-out;
+    filter: drop-shadow(2px 4px 20px #1b1b1b);
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card .text h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d8d8d8;
+    margin-bottom: 0.5rem;
+}
+
+.card .text p {
+    font-family: "Poppins", sans-serif;
+    color: var(--p-color);
+    font-size: 1.6rem;
+}
+
+.card .technologies {
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; 
-    margin-top: 10px;
+    gap: 10px;
 }
 
 .technology {
-    font-size: 14px; 
+    font-size: 1rem;
     background-color: #3a3a3a;
-    padding: 5px 10px; 
-    border-radius: 5px; 
-    color: #ffffff; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ffffff;
     margin: 5px;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .technology::after {
-    content: " "; 
+    content: " ";
+}
+
+/* Botão GitHub */
+.card .github-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card .github-button:hover {
+    background-color: #444;
+}
+
+.card .github-button svg {
+    margin-right: 5px;
 }

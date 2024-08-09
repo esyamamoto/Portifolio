@@ -5,6 +5,8 @@ import Competence from './components/Competence';
 import HamburgerMenu from './components/HamburgerMenu';
 import Project from './components/Project';
 import About from './components/About';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
@@ -34,6 +36,8 @@ function App() {
       <Project />
       <Competence/>
       <About />
+      <ContactForm />
+      <Footer />
     </div>
   );
 }

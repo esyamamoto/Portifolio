@@ -15,7 +15,7 @@ const Banner = () => {
     <header id="home">
       <div className="wrapper-home">
         <div className="banner">
-          <video autoPlay muted loop playsInline controls>
+          <video autoPlay muted loop playsInline >
             <source src={wallpaperGIF} type="video/mp4" />
           </video>
 
@@ -64,13 +64,13 @@ const Banner = () => {
                   className="ig"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.instagram.com/erika_sayurii/?hl=en"
+                  href="mailto:erika.s.yamamoto@gmail.com"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
-                    <path stroke="#fff" strokeLinejoin="round" d="M18 6.5a0.5 0.5 0 0 1 0 -1" strokeWidth="1"></path>
-                    <path stroke="#fff" strokeLinejoin="round" d="M18 6.5a0.5 0.5 0 0 0 0 -1" strokeWidth="1"></path>
-                    <path stroke="#fff" strokeLinejoin="round" d="M7 12a5 5 0 1 0 10 0 5 5 0 1 0 -10 0" strokeWidth="1"></path>
-                    <path stroke="#fff" d="M16.5 1.5h-9a6 6 0 0 0 -6 6v9a6 6 0 0 0 6 6h9a6 6 0 0 0 6 -6v-9a6 6 0 0 0 -6 -6Z" strokeWidth="1"></path>
+                    <path d="M12 13.295l-7.5-6.3V6h15v0.995l-7.5 6.3z"  stroke="#fff" />
+                    <path d="M12 13.295l7.5-6.3V6H4.5v0.995l7.5 6.3z" stroke="#fff" />
+                    <path d="M4.5 6H4v12h16V6h-0.5z"  stroke="#fff" />
+                    <path d="M4.5 6l7.5 6 7.5-6H4.5z"  stroke="#fff"/>
                   </svg>
                 </a>
               </div>

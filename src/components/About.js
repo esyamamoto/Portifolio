@@ -28,22 +28,21 @@ const about = () => {
                             <li data-aos="fade-up-left">📚 Aluna de Análise e Desenvolvimento de Sistemas na Estácio</li>
                             <li data-aos="fade-up-left">📚 Aluna Desenvolvedora Web Full-Stack na TRYBE</li>
                             <li data-aos="fade-up-left">📚 Formada em Comunicação Social - Publicidade e Propaganda, pela UNIP - Universidade Paulista</li>
-                            <li data-aos="fade-up-left">💻 erika.s.yamamoto@gmail.com</li>
                         </ul>
 
                         <div data-aos="fade-up-left" className="button">
                             <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1SwUHpLb2o_PpBczrUY492oTzbC3QIQXsEJsh3BvAIpk/edit?usp=sharing">
-                                <button>Confira meu CV <ion-icon name="enter-outline"></ion-icon></button>
+                                <button>Confira meu CV </button>
                             </a>
                         </div>
                         <div data-aos="fade-up-left" className="button">
                             <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1oN_fjjDH_VsXgHiAt_2Kj2z7a-RybthT/view?usp=sharing">
-                                <button>Histórico Escolar ADS<ion-icon name="enter-outline"></ion-icon></button>
+                                <button>Histórico Escolar ADS</button>
                             </a>
                         </div>
                         <div data-aos="fade-up-left" className="button">
                             <a target="_blank" rel="noopener noreferrer" href="https://www.credential.net/profile/erikasayuriyamamoto884178/wallet">
-                                <button>Certificados<ion-icon name="enter-outline"></ion-icon></button>
+                                <button>Certificados</button>
                             </a>
                         </div>
 
