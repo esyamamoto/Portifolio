@@ -21,7 +21,7 @@ const projectsData = {
         title: "Projeto Wallet",
         description: "Uma aplicação que computa gastos em diferentes moedas e converte tudo para uma única moeda, que pode ser escolhida por quem usa.",
         image: "/path/to/wallet-image.jpg",
-        link: "https://github.com/esyamamoto/FRONTEND--Wallet",
+        link: "https://frontend-wallet-pi.vercel.app/",
         github: "https://github.com/esyamamoto/FRONTEND--Wallet",
         technologies: [
             "React Native",
