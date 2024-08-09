@@ -1,3 +1,9 @@
+import appRecipes from "../images/app-recipes.png";
+import pixelArt from "../images/pixel-art.png";
+import pokedex from "../images/pokedex.png";
+import spotifake from "../images/spotifake.png";
+import starWars from "../images/starWars.png";
+
 // Dados dos projetos Front-End
 const projectsData = {
     frontEndProjects: [
@@ -5,7 +11,7 @@ const projectsData = {
         id: 1,
         title: "App de Receitas",
         description: "Plataforma onde os usuários podem visualizar, buscar, filtrar, favoritar e acompanhar o progresso de preparação de receitas de comidas e bebidas.",
-        image: "/path/to/receitas-image.jpg",
+        image: appRecipes,
         link: "https://frontend-app-recipes.vercel.app/",
         github: "https://github.com/esyamamoto/FRONTEND--App-recipes",
         technologies: [
@@ -59,7 +65,7 @@ const projectsData = {
         id: 5,
         title: "Pokédex",
         description: "Uma aplicação web simples de Pokédex que busca e exibe informações sobre Pokémon utilizando a PokéAPI.",
-        image: "/path/to/pokedex-image.jpg",
+        image: pokedex,
         link: "https://frontend-rtl-pokedex.vercel.app/",
         github: "https://github.com/esyamamoto/PokedexJs",
         technologies: [
@@ -74,7 +80,7 @@ const projectsData = {
         id: 6,
         title: "Star Wars",
         description: "Uma aplicação que consulta uma API para recuperar dados dos planetas do universo de Star Wars. Onde os dados retornados pela API usei para criar uma tabela com alguns filtros.",
-        image: "",
+        image: starWars,
         link: "https://frontend-star-wars.vercel.app/",
         github: "https://github.com/esyamamoto/FRONTEND--Star-Wars",
         technologies: [
@@ -87,7 +93,7 @@ const projectsData = {
         id: 7,
         title: "Music Favorite",
         description: "Nesse projeto foi criado uma aplicação para pesquisar e listar álbuns e músicas de várias bandas e artistas.",
-        image: "",
+        image: spotifake,
         link: "https://frontend-music-favorite.vercel.app/",
         github: "https://github.com/esyamamoto/FRONTEND--Music-Favorite",
         technologies: [
@@ -101,7 +107,7 @@ const projectsData = {
         id: 8,
         title: "Arte com Pixels",
         description: "um editor de arte com pixels em que a pessoa usuária poderá escolher uma cor em uma paleta de cores e poderá pintar o que quiser em um quadro branco ",
-        image: "",
+        image: pixelArt,
         link: "https://frontend-pixels-art.vercel.app/",
         github: "https://github.com/esyamamoto/FRONTEND--pixels-art",
         technologies: [
