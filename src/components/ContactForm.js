@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 import '../styles/ContactForm.css';
 
 const ContactForm = () => {
@@ -27,32 +28,50 @@ const ContactForm = () => {
 
     // Verifica se todos os campos estão preenchidos
     if (!name || !email || !message) {
-      alert('Todos os campos devem ser preenchidos.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Todos os campos devem ser preenchidos!',
+      });
       return;
     }
 
     if (message.length < 15) {
-      alert('A mensagem deve ter pelo menos 15 caracteres.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'A mensagem deve ter pelo menos 15 caracteres.',
+      });
       return;
     }
 
     if (!validateEmail(email)) {
-      alert('O e-mail fornecido não é válido.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'O e-mail fornecido não é válido.',
+      });
       return;
     }
+
 
     emailjs.send('emailMessage', 'template_bpzfsy1', formData, '-v_UQXU1nEuqEiE4T')
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
-      alert('Mensagem enviada com sucesso!');
-      setFormData({
-        name: '',
-        email: '',
-        message: '',
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Mensagem enviada com sucesso!",
+        showConfirmButton: false,
+        timer: 1500
       });
     }, (err) => {
       console.error('FAILED...', err);
-      alert('Ocorreu um erro ao enviar a mensagem.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Ocorreu um erro ao enviar a mensagem.',
+      });
     });
 };
 
