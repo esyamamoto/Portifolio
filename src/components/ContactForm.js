@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import '../styles/ContactForm.css';
 
 const ContactForm = () => {
@@ -14,7 +15,7 @@ const ContactForm = () => {
   };
 
   const validateEmail = (email) => {
-    // Expressão regular para validação básica de e-mail
+    // validação básica de e-mail
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
@@ -30,21 +31,30 @@ const ContactForm = () => {
       return;
     }
 
-    // Verifica se a mensagem tem pelo menos 30 caracteres
-    if (message.length < 30) {
-      alert('A mensagem deve ter pelo menos 30 caracteres.');
+    if (message.length < 15) {
+      alert('A mensagem deve ter pelo menos 15 caracteres.');
       return;
     }
 
-    // Verifica se o e-mail é válido
     if (!validateEmail(email)) {
       alert('O e-mail fornecido não é válido.');
       return;
     }
 
-    // Implementa aqui a lógica de envio do formulário
-    console.log('Form submitted:', formData);
-  };
+    emailjs.send('emailMessage', 'template_bpzfsy1', formData, '-v_UQXU1nEuqEiE4T')
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      alert('Mensagem enviada com sucesso!');
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+      });
+    }, (err) => {
+      console.error('FAILED...', err);
+      alert('Ocorreu um erro ao enviar a mensagem.');
+    });
+};
 
   return (
     <section id="contact-form">
