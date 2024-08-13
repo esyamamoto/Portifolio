@@ -50,8 +50,8 @@
 
 .light-mode #contact-form .form-group input,
 .light-mode #contact-form .form-group textarea {
-  background-color: #dbdbdb;
-  border: 1px solid #ddd;
+  background-color: #b3e5fc85;
+  border: 1px solid #b3e5fc;
   color: #000000;
 }
 
@@ -79,7 +79,7 @@
 }
 
 #contact-form .form-group label {
-  display: block;
+  display: flex;
   margin-bottom: 0.5rem;
   font-weight: bold;
   font-size: 1.5rem;

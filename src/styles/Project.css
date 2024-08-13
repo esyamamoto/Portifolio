@@ -1,260 +1,268 @@
-/* Modo escuro */
 .dark-mode #projects {
-    background: rgba(0, 0, 0, 0.519);
-    color: var(--color-text);
-  }
-  
-  .dark-mode #projects img.looper {
-    filter: brightness(0.1);
-  }
-  
-  .dark-mode .carousel-button {
-    background: rgb(119, 119, 119);
-    color: #fff;
-  }
-  
-  .dark-mode .cardProjects {
-    background: #222;
-    color: #d8d8d8;
-  }
-  
-  .dark-mode .cardProjects .text p {
-    color: var(--p-color);
-  }
-  
-  .dark-mode .cardProjects .github-button {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .dark-mode .cardProjects .github-button:hover {
-    background-color: #444;
-  }
-  
-  .dark-mode .cardProjects .github-button svg path {
-    stroke: #fff;
-  }
-  
-  /* Modo claro */
-  .light-mode #projects {
-    background: #ffffff;
-    color: #000;
-  }
-  
-  .light-mode #projects img.looper {
-    filter: brightness(1);
-  }
-  
-  .light-mode .carousel-button {
-    background: rgba(88, 88, 88, 0.5);
-    color: #000;
-  }
-  
-  .light-mode .cardProjects {
-    background: #c7c7c7;
-    color: #333;
-  }
-  
-  .light-mode .cardProjects .text p {
-    color: #333;
-  }
-  
-  .light-mode .cardProjects .github-button {
-    background-color: #d8d7d7;
-    color: #333;
-    border: 1px solid #333;
-  }
-  
-  .light-mode .cardProjects .github-button:hover {
-    background-color: #ddd;
-    color: #333;
-  }
-  
-  .light-mode .cardProjects .github-button svg path {
-    stroke: #333;
-  }
-  
-  /* Restante do CSS */
-  #projects {
-    overflow: hidden;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    position: relative;
-    padding: 2rem;
-    
-  }
-  
-  #projects img.textoPortfolio {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: -1;
-    opacity: 0.02;
-  }
-  
-  #projects img.looper.um {
-    bottom: 91%;
-    right: -24rem;
-  }
-  
-  #projects img.looper.dois {
-    bottom: 45%;
-    left: -24rem;
-  }
-  
-  #projects img.looper.tres {
-    bottom: 10%;
-    right: -24rem;
-  }
-  
-  @keyframes rotate {
-    0% {
+  background: rgba(0, 0, 0, 0.519);
+  color: var(--color-text);
+}
+
+.dark-mode #projects img.looper {
+  filter: brightness(0.1);
+}
+
+.dark-mode .carousel-button {
+  background: rgb(119, 119, 119);
+  color: #fff;
+}
+
+.dark-mode .cardProjects {
+  background: #222;
+  color: #ffffff;
+}
+
+.dark-mode .cardProjects .text p {
+  color: var(--p-color);
+}
+
+.dark-mode .cardProjects .github-button {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .cardProjects .github-button:hover {
+  background-color: #444;
+}
+
+.dark-mode .cardProjects .github-button svg path {
+  stroke: #fff;
+}
+
+/* Modo claro */
+.light-mode #projects {
+  background: #ffffff;
+  color: #000;
+}
+
+.light-mode #projects img.looper {
+  filter: brightness(1);
+}
+
+.light-mode .carousel-button {
+  background: #b3e5fc;
+  color: rgb(0, 0, 0);
+}
+
+.light-mode .carousel-button:hover {
+  background-color: #0051ff;
+  color: #ffffff;
+}
+
+.light-mode .cardProjects {
+  background: #b3e5fc5d;
+  color: #000000;
+  border: 1px solid #0051ff;
+}
+
+.light-mode .cardProjects .text p {
+  color: #000000;
+}
+
+.light-mode .cardProjects .github-button {
+  background-color: #b3e5fc;
+  border: 1px solid #81d4fa;
+}
+
+.light-mode .cardProjects .github-button:hover {
+  background-color: #0051ff;
+  color: #000;
+}
+
+.light-mode .cardProjects .github-button svg path {
+  stroke: #000;
+}
+
+.light-mode .cardProjects .github-button svg path:hover {
+  stroke: #ffffff;
+}
+
+.light-mode .wrapper {
+  background: #ffffff !important;
+}
+
+/* Restante do CSS */
+#projects {
+  overflow: hidden;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  position: relative;
+  padding: 2rem;
+}
+
+#projects img.textoPortfolio {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+  opacity: 0.02;
+}
+
+#projects img.looper.um {
+  bottom: 91%;
+  right: -24rem;
+}
+
+#projects img.looper.dois {
+  bottom: 45%;
+  left: -24rem;
+}
+
+#projects img.looper.tres {
+  bottom: 10%;
+  right: -24rem;
+}
+
+@keyframes rotate {
+  0% {
       transform: rotate(0deg);
-    }
-    100% {
+  }
+  100% {
       transform: rotate(360deg);
-    }
   }
-  
-  #projects header h2 {
-    line-height: 1.1;
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  #projects header {
-    margin-bottom: 4rem;
-  }
-  
-  #projects h3 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: 2rem 0;
-  }
-  
-  #projects p {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.6rem;
-  }
-  
-  /* Carousel */
-  .carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .carousel-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-    font-size: 2rem;
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-  
-  .carousel-button.left {
-    left: 10px;
-  }
-  
-  .carousel-button.right {
-    right: 10px;
-  }
-  
-  /* cardProjects */
-  .cardProjects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    padding: 2rem;
-    transition: transform 0.3s ease;
-    margin: 0 auto;
-    width: 300px;
-    height: 730px;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  }
-  
-  .cardProjects .image img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover; 
-    border-radius: 10px;
-    transition: all 200ms ease-in-out;
-    margin-bottom: 1rem;
-  }
-  
-  .cardProjects:hover {
-    transform: translateY(-10px);
-  }
-  
-  .cardProjects .text {
-    flex: 1; 
 }
 
-  .cardProjects .text h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-  
-  .cardProjects .text p {
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-  }
-  
-  .cardProjects .technologies {
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .technology {
-    font-size: 1rem;
-    background-color: #5c5b5b;
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #ffffff;
-    margin: 5px;
-    white-space: nowrap;
-  }
-  
-  .technology::after {
-    content: " ";
-  }
-  z
-  /* Botão GitHub */
-  .cardProjects .github-button {
-    border-radius: 50%;
-    text-decoration: none;
-    margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    background-color: #000;
-    width: fit-content;
-  }
-  
+#projects header h2 {
+  line-height: 1.1;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
 
-  
+#projects header {
+  margin-bottom: 4rem;
+}
+
+#projects h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+#projects p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+/* cardProjects */
+.cardProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+  width: 300px;
+  height: 730px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.cardProjects .image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; 
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.cardProjects:hover {
+  transform: translateY(-10px);
+}
+
+.cardProjects .text {
+  flex: 1; 
+}
+
+.cardProjects .text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cardProjects .text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.cardProjects .technologies {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.technology {
+  font-size: 1rem;
+  background-color: #333333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  margin: 5px;
+  white-space: nowrap;
+}
+
+.technology::after {
+  content: " ";
+}
+
+/* Botão GitHub */
+.cardProjects .github-button {
+  border-radius: 50%;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  background-color: #000;
+  width: fit-content;
+}

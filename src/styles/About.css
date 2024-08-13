@@ -39,7 +39,7 @@
 }
 
 .light-mode #about .image img {
-  box-shadow: 19px 19px 30px rgb(85, 85, 85), -19px -19px 30px #f0f0f0;
+  box-shadow: 19px 19px 30px #bbe9ff, -19px -19px 30px  #65bce4;
 }
 
 .light-mode #about .content header h2 {
@@ -59,13 +59,17 @@
 }
 
 .light-mode #about .content .text a button {
-  border: 1px solid var(--color-text);
-  color: #111111;
+  border:1px solid #0051ff;
+  color: #000000;
+  cursor: pointer;
+  background-color: #b3e5fc;
 }
 
 .light-mode #about .content .text a button:hover {
-  background-color: var(--color-text);
-  color:  #1c2dca;
+  background-color:  #1c2dca;
+  color:  #ffffff;
+  box-shadow: 5px 5px 10px #0b618a;
+  cursor: pointer;
 }
 
 
@@ -98,7 +102,6 @@
   border-radius: 50%;
   box-shadow:  19px 19px 30px #535353,
   -19px -19px 30px #2020201f;
-  
   animation: move 3s ease-in-out infinite;
 }
 

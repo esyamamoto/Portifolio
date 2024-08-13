@@ -136,6 +136,7 @@ backEndProjects: [
         id: 10,
         title: "Projeto Agrotech",
         description: "AgroTech é uma empresa especializada em tecnologias para melhorar a eficiência no cultivo de plantações 🌱🌳. Isso visa reduzir o desperdício de recursos em geral e de alimentos em específico, fazendo um uso mais responsável da terra disponível para plantio. O primeiro produto dessa empresa será o Agrix, um sistema que permitirá a gestão e o monitoramento das fazendas participantes.",
+        
         github: "https://github.com/esyamamoto/BACKEND-AgroTech",
         technologies: [
             "Java",
@@ -208,7 +209,7 @@ backEndProjects: [
     },
     {
         id: 16,
-        title: "LOJA DE ITENS MEDIEVAIS",
+        title: "Loja itens medievais",
         description: "Desenvolvi uma API para uma loja de ⚔️itens medievais🛡️, implementando camadas de Service e Controllers em TypeScript com Sequelize, incluindo autenticação JWT para segurança e testes para garantir a funcionalidade dos endpoints.",
         github: "https://github.com/esyamamoto/BACKEND--Loja-Itens-Medievais",
         technologies: [

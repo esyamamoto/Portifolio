@@ -34,7 +34,7 @@
 
 /* Modo claro */
 .light-mode #competence {
-  background-color: #ffffff;
+  background: #ffffff;
   color: #000000; 
 }
 
@@ -43,8 +43,8 @@
 }
 
 .light-mode #competence .card {
-  background: rgba(199, 199, 199, 0.342); 
-  border-image: linear-gradient(45deg, #f0db4f, #ec6231, #264de4) 1;
+  background:  #b3e5fc5d;
+  border: 1px solid #0051ff;
 }
 
 .light-mode #competence .description {
@@ -56,12 +56,17 @@
 }
 
 .light-mode #competence .content {
-  color: #5c5b5b;
+  color: #000000;
 }
 
 .light-mode #competence .toggle-button {
-  background: rgba(185, 185, 185, 0.5); 
-  color: #000000;
+  background: #b3e5fc;
+  color: rgb(0, 0, 0);
+}
+
+.light-mode #competence .toggle-button:hover {
+  background-color: #0051ff;
+  color: #ffffff;
 }
 
 /* Estilos gerais */
@@ -100,6 +105,7 @@
   min-height: 20rem;
   border-width: 3px;
   border-style: solid;
+  transition: transform 0.3s ease;
 }
 
 #competence .card:hover {
@@ -143,8 +149,9 @@
   margin-top: 1.5rem;
   margin-bottom: 5px;
   padding: 0.5rem; 
-  border-radius: 45%;
-  transition: background-color 0.3s, box-shadow 0.3s; 
+  border-radius: 50%;
+  transition: background-color 0.3s, box-shadow 0.3s ease; 
+  width: fit-content;
 }
 
 #competence .toggle-button:hover {
