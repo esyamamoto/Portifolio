@@ -12,6 +12,11 @@
   color: #fff;
 }
 
+.dark-mode .carousel-button:hover {
+  background: rgb(46, 46, 46);
+  color: #fff;
+}
+
 .dark-mode .cardProjects {
   background: #222;
   color: #ffffff;
@@ -22,12 +27,12 @@
 }
 
 .dark-mode .cardProjects .github-button {
-  background-color: #333;
+  background-color: #525252;
   color: #fff;
 }
 
 .dark-mode .cardProjects .github-button:hover {
-  background-color: #444;
+  background-color: #000000;
 }
 
 .dark-mode .cardProjects .github-button svg path {
