@@ -1,5 +1,3 @@
-/* Projects.module.css */
-
 /* Modo escuro */
 .dark-mode #projects {
     background: rgba(0, 0, 0, 0.519);
@@ -15,25 +13,25 @@
     color: #fff;
   }
   
-  .dark-mode .card {
+  .dark-mode .cardProjects {
     background: #222;
     color: #d8d8d8;
   }
   
-  .dark-mode .card .text p {
+  .dark-mode .cardProjects .text p {
     color: var(--p-color);
   }
   
-  .dark-mode .card .github-button {
+  .dark-mode .cardProjects .github-button {
     background-color: #333;
     color: #fff;
   }
   
-  .dark-mode .card .github-button:hover {
+  .dark-mode .cardProjects .github-button:hover {
     background-color: #444;
   }
   
-  .dark-mode .card .github-button svg path {
+  .dark-mode .cardProjects .github-button svg path {
     stroke: #fff;
   }
   
@@ -52,27 +50,27 @@
     color: #000;
   }
   
-  .light-mode .card {
+  .light-mode .cardProjects {
     background: #c7c7c7;
     color: #333;
   }
   
-  .light-mode .card .text p {
+  .light-mode .cardProjects .text p {
     color: #333;
   }
   
-  .light-mode .card .github-button {
+  .light-mode .cardProjects .github-button {
     background-color: #d8d7d7;
     color: #333;
     border: 1px solid #333;
   }
   
-  .light-mode .card .github-button:hover {
+  .light-mode .cardProjects .github-button:hover {
     background-color: #ddd;
     color: #333;
   }
   
-  .light-mode .card .github-button svg path {
+  .light-mode .cardProjects .github-button svg path {
     stroke: #333;
   }
   
@@ -163,16 +161,15 @@
     top: 50%;
     transform: translateY(-50%);
     border: none;
-    border-radius: 50%;
     padding: 1rem;
     cursor: pointer;
     font-size: 2rem;
     z-index: 10;
-  }
-  
-  .carousel-button:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-  }
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
   
   .carousel-button.left {
     left: 10px;
@@ -182,8 +179,8 @@
     right: 10px;
   }
   
-  /* Card */
-  .card {
+  /* cardProjects */
+  .cardProjects {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,34 +189,41 @@
     padding: 2rem;
     transition: transform 0.3s ease;
     margin: 0 auto;
-    width: 90%;
-    max-width: 400px;
+    width: 300px;
+    height: 730px;
     position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
   
-  .card .image img {
+  .cardProjects .image img {
     width: 100%;
+    height: 300px;
+    object-fit: cover; 
     border-radius: 10px;
     transition: all 200ms ease-in-out;
     margin-bottom: 1rem;
   }
   
-  .card:hover {
+  .cardProjects:hover {
     transform: translateY(-10px);
   }
   
-  .card .text h3 {
-    font-size: 2rem;
+  .cardProjects .text {
+    flex: 1; 
+}
+
+  .cardProjects .text h3 {
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
   }
   
-  .card .text p {
+  .cardProjects .text p {
     font-family: "Poppins", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
   
-  .card .technologies {
+  .cardProjects .technologies {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -239,22 +243,18 @@
   .technology::after {
     content: " ";
   }
-  
+  z
   /* Botão GitHub */
-  .card .github-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 15px;
-    border-radius: 50px;
+  .cardProjects .github-button {
+    border-radius: 50%;
     text-decoration: none;
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    background-color: #000;
+    width: fit-content;
   }
   
-  .card .github-button svg {
-    margin-right: 5px;
-  }
+
   

@@ -17,9 +17,9 @@ const Carousel = ({ items }) => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + totalItems) % totalItems);
     };
 
-    // Alternar slides a cada 7 segundos
+    // Alternar slides a cada 15 segundos
     useEffect(() => {
-        const interval = setInterval(nextSlide, 7000);
+        const interval = setInterval(nextSlide, 15000);
         return () => clearInterval(interval);
     }, []);
 
@@ -29,7 +29,7 @@ const Carousel = ({ items }) => {
             <div className="carousel-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                 {items.map(item => (
                     <div key={item.id} className="carousel-item">
-                        <div className="card">
+                        <div className="cardProjects">
                             <div className="image">
                                 <a target="_blank" rel="noopener noreferrer" href={item.link}>
                                     <img src={item.image} alt={item.title} />

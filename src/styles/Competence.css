@@ -3,11 +3,11 @@
 /* Modo escuro */
 .dark-mode #competence {
   background-color: #050505;
-  color: #d8d7d7; /* Texto em modo escuro */
+  color: #d8d7d7
 }
 
 .dark-mode #competence header h2 {
-  color: var(--color-text); /* Texto do cabeçalho */
+  color: var(--color-text);
 }
 
 .dark-mode #competence .card {
@@ -60,7 +60,7 @@
 }
 
 .light-mode #competence .toggle-button {
-  background: rgba(185, 185, 185, 0.5); /* Fundo mais claro */
+  background: rgba(185, 185, 185, 0.5); 
   color: #000000;
 }
 
