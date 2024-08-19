@@ -240,10 +240,10 @@
 }
 
 .cardProjects .technologies {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.5px;
 }
 
 .technology {

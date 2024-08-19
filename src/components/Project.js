@@ -70,7 +70,7 @@ const Carousel = ({ items }) => {
 
 // Componente Projects
 const Projects = () => {
-    const { frontEndProjects, backEndProjects } = projectsData;
+    const { frontEndProjects, backEndProjects, fullStackProjects } = projectsData;
 
     return (
         <section id="projects">
@@ -85,6 +85,9 @@ const Projects = () => {
 
                 <h3>Projetos Back-End:</h3>
                 <Carousel items={backEndProjects} />
+
+                <h3>Projetos Full-Stack:</h3>
+                <Carousel items={fullStackProjects} />
             </div>
         </section>
     );
