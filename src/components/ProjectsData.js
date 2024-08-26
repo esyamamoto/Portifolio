@@ -302,7 +302,7 @@ fullStackProjects: [
     },
     {
         id: 21,
-        title: "Blog Pessoal",
+        title: "e-Commerce",
         description: "O e-Commerce oferece informações e suporte para descartes e trocas ecológicas, colaborando com empresas e pontos ecológicos para promover o desenvolvimento sustentável.",
         image: eCommerce,
         link : "https://lumens.netlify.app/#/inicio",
