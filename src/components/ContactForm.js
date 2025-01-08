@@ -1,3 +1,5 @@
+// https://www.emailjs.com/
+
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
@@ -36,11 +38,11 @@ const ContactForm = () => {
       return;
     }
 
-    if (message.length < 15) {
+    if (message.length < 10) {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'A mensagem deve ter pelo menos 15 caracteres.',
+        text: 'A mensagem deve ter pelo menos 10 caracteres.',
       });
       return;
     }
@@ -55,7 +57,7 @@ const ContactForm = () => {
     }
 
 
-    emailjs.send('emailMessage', 'template_bpzfsy1', formData, '-v_UQXU1nEuqEiE4T')
+    emailjs.send('gmailMessage', 'template_2fl4u6n', formData, '-v_UQXU1nEuqEiE4T')
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
       Swal.fire({
