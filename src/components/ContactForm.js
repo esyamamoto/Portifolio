@@ -72,7 +72,7 @@ const ContactForm = () => {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Ocorreu um erro ao enviar a mensagem.',
+        text: 'Ocorreu um erro ao enviar a mensagem. Tente novamento daqui a alguns minutos',
       });
     });
 };
