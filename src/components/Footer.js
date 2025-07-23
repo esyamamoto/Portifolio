@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="social-links">
           <a href="https://www.linkedin.com/in/erikasyamamoto/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://github.com/esyamamoto" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="mailto:erika.s.yamamoto@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+          <a href="mailto:e.sayuri.yamamoto@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
         </div>
       </div>
     </footer>

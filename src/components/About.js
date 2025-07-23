@@ -20,18 +20,21 @@ const about = () => {
                         </p>
                         <br />
                         <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-                            Sou formada em publicidade e propaganda e, durante a graduação, me deparei com a área de tecnologia. Minha jornada iniciou-se por meio de dois trabalhos voluntários, nos quais percebi a paixão pela tecnologia, motivando minha transição de carreira.
-                            Atualmente, estou imersa em minha jornada de aprimoramento profissional, focada em desenvolver projetos e aprimorar minhas habilidades na área. Por meio do curso técnico da Trybe e da Faculdade de Análise e Desenvolvimento de Sistemas, estou construindo uma base sólida e aprofundando meus conhecimentos.
+                        Sou formada em Publicidade e Propaganda e iniciei minha trajetória na área de TI por meio de experiências voluntárias que me motivaram a realizar a transição de carreira. 
+                        Atualmente, curso Análise e Desenvolvimento de Sistemas na faculdade e finalizei o curso da Trybe em Desenvolvimento Web Full-Stack, onde foi desenvolvido projetos práticos que envolvem front-end e back-end.   
+                        </p>
+                         <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                        Estou apta a participar de processos seletivos afirmativos para <strong>Pessoa com Deficiência (PCD)</strong>, com laudo médico disponível para comprovação.   
                         </p>
                         <ul>
-                            <li data-aos="fade-up-left">📍 São Paulo, Botucatu.</li>
+                            <li data-aos="fade-up-left">📍 São Paulo, SP.</li>
                             <li data-aos="fade-up-left">📚 Aluna de Análise e Desenvolvimento de Sistemas na Estácio</li>
-                            <li data-aos="fade-up-left">📚 Aluna Desenvolvedora Web Full-Stack na TRYBE</li>
+                            <li data-aos="fade-up-left">📚 Formada como Desenvolvedora Web Full-Stack na TRYBE</li>
                             <li data-aos="fade-up-left">📚 Formada em Comunicação Social - Publicidade e Propaganda, pela UNIP - Universidade Paulista</li>
                         </ul>
 
                         <div data-aos="fade-up-left" className="button">
-                            <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1SwUHpLb2o_PpBczrUY492oTzbC3QIQXsEJsh3BvAIpk/edit?usp=sharing">
+                            <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1XFlDrgeY2Mac21nAQhrpr0w468zi0Y0VvDbLyX16HOU/edit?usp=sharing">
                                 <button>Confira meu CV </button>
                             </a>
                         </div>
@@ -51,6 +54,7 @@ const about = () => {
                                 <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Outros cursos</h2>
                             </header>
                             <ul>
+                                <li data-aos="fade-up-left">📚 Rocketseat - Data Analytics e IA para devs - em andamento</li>
                                 <li data-aos="fade-up-left">📚 Alura - GIT E GITHUB</li>
                                 <li data-aos="fade-up-left">📚 Alura - JAVA E JDK</li>
                                 <li data-aos="fade-up-left">📚 DIO - Conceitos de responsividade e experiência do usuário</li>

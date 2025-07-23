@@ -64,7 +64,7 @@ const Banner = () => {
                   className="ig"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="mailto:erika.s.yamamoto@gmail.com"
+                  href="mailto:e.sayuri.yamamoto@gmail.com"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
                     <path d="M12 13.295l-7.5-6.3V6h15v0.995l-7.5 6.3z"  stroke="#fff" />
