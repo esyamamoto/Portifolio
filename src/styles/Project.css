@@ -8,18 +8,34 @@
 }
 
 .dark-mode .carousel-button {
-  background: rgb(119, 119, 119);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  margin: -20px;
 }
 
 .dark-mode .carousel-button:hover {
-  background: rgb(46, 46, 46);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
   color: #fff;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.5);
+  margin: -20px;
 }
 
 .dark-mode .cardProjects {
-  background: #222;
+  background: rgba(34, 34, 34, 0.9);
   color: #ffffff;
+  border: 2px solid rgba(102, 126, 234, 0.4);
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.25);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.dark-mode .cardProjects:hover {
+  border-color: rgba(102, 126, 234, 0.7);
+  box-shadow: 0 20px 50px rgba(102, 126, 234, 0.45);
+  transform: translateY(-8px);
 }
 
 .dark-mode .cardProjects .text p {
@@ -27,16 +43,50 @@
 }
 
 .dark-mode .cardProjects .github-button {
-  background-color: #525252;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
 }
 
 .dark-mode .cardProjects .github-button:hover {
-  background-color: #000000;
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
 }
 
 .dark-mode .cardProjects .github-button svg path {
   stroke: #fff;
+}
+
+/* Scrollbars para modo escuro */
+.dark-mode .cardProjects .text p::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.dark-mode .cardProjects .text p::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode .cardProjects .technologies::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.dark-mode .cardProjects .technologies::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Tecnologias para modo escuro */
+.dark-mode .technology {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.dark-mode .technology:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
 }
 
 /* Modo claro */
@@ -50,19 +100,34 @@
 }
 
 .light-mode .carousel-button {
-  background: #b3e5fc;
-  color: rgb(0, 0, 0);
+  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px rgba(116, 185, 255, 0.4);
+  margin: -20px;
 }
 
 .light-mode .carousel-button:hover {
-  background-color: #0051ff;
+  background: linear-gradient(135deg, #0984e3 0%, #74b9ff 100%);
   color: #ffffff;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 12px 40px rgba(116, 185, 255, 0.6);
+  margin: -20px;
 }
 
 .light-mode .cardProjects {
-  background: #b3e5fc5d;
+  background: rgba(255, 255, 255, 0.85);
   color: #000000;
-  border: 1px solid #0051ff;
+  border: 2px solid rgba(116, 185, 255, 0.6);
+  box-shadow: 0 12px 40px rgba(116, 185, 255, 0.25);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.light-mode .cardProjects:hover {
+  border-color: rgba(116, 185, 255, 0.9);
+  box-shadow: 0 20px 50px rgba(116, 185, 255, 0.45);
+  transform: translateY(-8px);
 }
 
 .light-mode .cardProjects .text p {
@@ -70,21 +135,55 @@
 }
 
 .light-mode .cardProjects .github-button {
-  background-color: #b3e5fc;
-  border: 1px solid #81d4fa;
+  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 20px rgba(116, 185, 255, 0.4);
 }
 
 .light-mode .cardProjects .github-button:hover {
-  background-color: #0051ff;
-  color: #000;
+  background: linear-gradient(135deg, #0984e3 0%, #74b9ff 100%);
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(116, 185, 255, 0.6);
 }
 
 .light-mode .cardProjects .github-button svg path {
-  stroke: #000;
+  stroke: #fff;
 }
 
 .light-mode .cardProjects .github-button svg path:hover {
   stroke: #ffffff;
+}
+
+/* Scrollbars para modo claro */
+.light-mode .cardProjects .text p::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.light-mode .cardProjects .text p::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.light-mode .cardProjects .technologies::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.light-mode .cardProjects .technologies::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Tecnologias para modo claro */
+.light-mode .technology {
+  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 8px rgba(116, 185, 255, 0.4);
+}
+
+.light-mode .technology:hover {
+  background: linear-gradient(135deg, #0984e3 0%, #74b9ff 100%);
+  box-shadow: 0 4px 12px rgba(116, 185, 255, 0.6);
 }
 
 .light-mode .wrapper {
@@ -177,22 +276,34 @@
   top: 50%;
   transform: translateY(-50%);
   border: none;
-  padding: 1rem;
+  padding: 0.8rem;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   z-index: 10;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .carousel-button.left {
-  left: 10px;
+  left: 20px;
 }
 
 .carousel-button.right {
-  right: 10px;
+  right: 20px;
+}
+
+.carousel-button:active {
+  transform: translateY(-50%) scale(0.95);
 }
 
 /* cardProjects */
@@ -201,73 +312,266 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 2rem;
-  transition: transform 0.3s ease;
-  margin: 0 auto;
-  width: 300px;
-  height: 730px;
+  margin: 10px auto;
+  width: 340px;
+  height: 750px;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  overflow: hidden;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  
+}
+
+.cardProjects .image {
+  flex-shrink: 0;
+  margin-bottom: 1.5rem;
+  height: 320px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.cardProjects .image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .cardProjects .image img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   object-fit: cover; 
-  border-radius: 10px;
-  transition: all 200ms ease-in-out;
-  margin-bottom: 1rem;
+  border-radius: 12px;
+  transition: all 0.4s ease-in-out;
 }
 
-.cardProjects:hover {
-  transform: translateY(-10px);
+.cardProjects .image img:hover {
+  transform: scale(1.05);
 }
 
 .cardProjects .text {
-  flex: 1; 
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .cardProjects .text h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
 }
 
 .cardProjects .text p {
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 1.rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 0.5rem;
+  flex: 1;
+  max-height: 140px;
+  overflow-y: auto;
+  padding-right: 8px;
+  padding-left: 2px;
+}
+
+.cardProjects .text p::-webkit-scrollbar {
+  width: 4px;
+}
+
+.cardProjects .text p::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+.cardProjects .text p::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+}
+
+.cardProjects .text p::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .cardProjects .technologies {
-  margin-top: 1rem;
+  margin-bottom: 1.5rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5px;
+  gap: 4px;
+  justify-content: center;
+  min-height: 40px;
+  max-height: 70px;
+  overflow-y: auto;
+  padding: 0.5rem 0;
+  flex-shrink: 0;
+}
+
+.cardProjects .technologies::-webkit-scrollbar {
+  width: 3px;
+}
+
+.cardProjects .technologies::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+.cardProjects .technologies::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
 }
 
 .technology {
-  font-size: 1rem;
-  background-color: #333333;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: #ffffff;
-  margin: 5px;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin: 1px;
   white-space: nowrap;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: default;
+  letter-spacing: 0.2px;
+}
+
+.technology:hover {
+  transform: translateY(-1px) scale(1.02);
 }
 
 .technology::after {
-  content: " ";
+  content: "";
 }
 
 /* Botão GitHub */
 .cardProjects .github-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   text-decoration: none;
-  margin-top: 1rem;
+  margin: 0 auto;
   font-size: 1rem;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   background-color: #000;
-  width: fit-content;
+  padding: 10px;
+  position: relative;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cardProjects .github-button:active {
+  transform: scale(0.95);
+}
+
+.cardProjects .github-button svg {
+  width: 22px;
+  height: 22px;
+  transition: all 0.3s ease;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .carousel-button {
+    width: 40px;
+    height: 40px;
+    padding: 0.7rem;
+    font-size: 1.3rem;
+  }
+  
+  .carousel-button.left {
+    left: 10px;
+  }
+  
+  .carousel-button.right {
+    right: 10px;
+  }
+  
+  .cardProjects {
+    width: 320px;
+    height: 720px;
+    padding: 1.5rem;
+  }
+  
+  .cardProjects .image {
+    height: 300px;
+  }
+  
+  .cardProjects .text h3 {
+    font-size: 1.4rem;
+  }
+  
+  .cardProjects .text p {
+    font-size: 1rem;
+    max-height: 120px;
+  }
+  
+  .cardProjects .github-button {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+  
+  .cardProjects .github-button svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-button {
+    width: 35px;
+    height: 35px;
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+  
+  .carousel-button.left {
+    left: 5px;
+  }
+  
+  .carousel-button.right {
+    right: 5px;
+  }
+  
+  .cardProjects {
+    width: 300px;
+    height: 700px;
+    padding: 1.25rem;
+  }
+  
+  .cardProjects .image {
+    height: 280px;
+  }
+  
+  .cardProjects .text h3 {
+    font-size: 1.3rem;
+  }
+  
+  .cardProjects .text p {
+    font-size: 0.95rem;
+    max-height: 110px;
+  }
+  
+  .cardProjects .github-button {
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+  }
+  
+  .cardProjects .github-button svg {
+    width: 16px;
+    height: 16px;
+  }
 }

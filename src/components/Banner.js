@@ -3,20 +3,29 @@ import '../styles/Banner.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import wallpaperGIF from '../images/wallpaperGIF.mp4';
+import wallpaperLight from '../images/walpaperlight.mp4';
 
-const Banner = () => {
+const Banner = ({ theme }) => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
   }, []);
 
+  useEffect(() => {
+    // Forçar recarregamento do vídeo quando o tema mudar
+    const video = document.querySelector('#home .banner video');
+    if (video) {
+      video.load();
+    }
+  }, [theme]);
+
   return (
     <header id="home">
       <div className="wrapper-home">
         <div className="banner">
-          <video autoPlay muted loop playsInline >
-            <source src={wallpaperGIF} type="video/mp4" />
+          <video key={theme} autoPlay muted loop playsInline >
+            <source src={theme === 'light-mode' ? wallpaperLight : wallpaperGIF} type="video/mp4" />
           </video>
 
           <div className="content">

@@ -258,31 +258,6 @@ backEndProjects: [
 ],
 fullStackProjects: [
     {
-        id: 19,
-        title: "Sistema Médico para Gestão de Consultório e Hospital",
-        description: "*Estamos começando o desenvolvimento deste projeto agora* Este sistema é uma solução completa e integrada para a gestão de consultórios e hospitais, cobrindo a administração de médicos e pacientes, bem como funcionalidades avançadas para ambientes hospitalares.",
-        github: "https://github.com/esyamamoto/My-Medical-System",
-        technologies: [
-            "Java",
-            "Docker",
-            "Spring",
-            "JUnit",
-            "ReactJS",
-            "TypeScript",
-            "Next.js",
-            "React Router",
-            "Node.js",
-            "Express.js",
-            "Sequelize ORM",
-            "MySQL",
-            "PostgreSQL",
-            "Jest",
-            "Cypress",
-            "Postman",
-            "Insomnia"
-        ]
-    },
-    {
         id: 20,
         title: "Blog Pessoal",
         description: "O Blog Pessoal é uma plataforma interativa onde usuários podem compartilhar suas ideias e histórias através de postagens personalizadas.",

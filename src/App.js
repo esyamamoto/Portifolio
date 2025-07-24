@@ -42,7 +42,7 @@ function App() {
     <div>
       <ThemeSwitch theme={theme} toggleTheme={themeSwitch} />
       <HamburgerMenu />
-      <Banner />
+      <Banner theme={theme} />
       <Project />
       <Competence />
       <About />
