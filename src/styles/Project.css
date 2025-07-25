@@ -3,20 +3,7 @@
   color: var(--color-text);
 }
 
-.dark-mode.light-mode .carousel-button {
-  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
-  color: #fff;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(116, 185, 255, 0.4);
-  backdrop-filter: blur(10px);
-}
-
-.light-mode .carousel-button:hover {
-  background: linear-gradient(135deg, #0984e3 0%, #74b9ff 100%);
-  color: #fff;
-  transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 12px 40px rgba(116, 185, 255, 0.6);
-}looper {
+.dark-mode #projects img.looper {
   filter: brightness(0.1);
 }
 
@@ -40,8 +27,8 @@
   color: #ffffff;
   border: 2px solid rgba(102, 126, 234, 0.4);
   box-shadow: 0 12px 40px rgba(102, 126, 234, 0.25);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
 }
 
 .dark-mode .cardProjects:hover {
@@ -113,18 +100,17 @@
 
 .light-mode .carousel-button {
   background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
-  color: #ffffff;
+  color: #fff;
   border: 2px solid rgba(255, 255, 255, 0.8);
   box-shadow: 0 8px 32px rgba(116, 185, 255, 0.4);
-  margin: -20px;
+  backdrop-filter: blur(10px);
 }
 
 .light-mode .carousel-button:hover {
   background: linear-gradient(135deg, #0984e3 0%, #74b9ff 100%);
-  color: #ffffff;
+  color: #fff;
   transform: translateY(-50%) scale(1.1);
   box-shadow: 0 12px 40px rgba(116, 185, 255, 0.6);
-  margin: -20px;
 }
 
 .light-mode .cardProjects {
@@ -132,8 +118,8 @@
   color: #000000;
   border: 2px solid rgba(116, 185, 255, 0.6);
   box-shadow: 0 12px 40px rgba(116, 185, 255, 0.25);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
 }
 
 .light-mode .cardProjects:hover {
