@@ -29,15 +29,6 @@ Portfólio pessoal desenvolvido em React para apresentar meus projetos, habilida
 - **EmailJS** - Envio de emails via formulário de contato
 - **SweetAlert2** - Alertas customizados
 
-## Implementacoes futuras
-- **React-i18next** - Internacionalização (Português/Inglês) ✅
-    Funcionalidades de Internacionalização:
-    **🌐 Suporte multilíngue:** Português e Inglês
-    **🔄 Troca dinâmica:** Botão fixo no canto superior direito
-    **💾 Persistência:** Salva preferência do usuário no localStorage  
-    **🎯 Detecção automática:** Identifica idioma do navegador
-    **📱 Design responsivo:** Switch adaptável para mobile
-
 ### Deploy
 - **Vercel** - Hospedagem e deploy contínuo
 
@@ -80,7 +71,6 @@ src/
 │   ├── Competence.js
 │   ├── ContactForm.js
 │   ├── Footer.js
-│   ├── LanguageSwitch.js
 │   ├── HamburgerMenu.js
 │   ├── Project.js
 │   └── ThemeSwitch.js

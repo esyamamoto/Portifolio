@@ -3,20 +3,7 @@
   color: var(--color-text);
 }
 
-.dark-mode.light-mode .carousel-button {
-  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
-  color: #fff;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(116, 185, 255, 0.4);
-  backdrop-filter: blur(10px);
-}
-
-.light-mode .carousel-button:hover {
-  background: linear-gradient(135deg, #0984e3 0%, #74b9ff 100%);
-  color: #fff;
-  transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 12px 40px rgba(116, 185, 255, 0.6);
-}looper {
+.dark-mode #projects img.looper {
   filter: brightness(0.1);
 }
 
@@ -25,7 +12,7 @@
   color: #fff;
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
-  backdrop-filter: blur(10px);
+  margin: -20px;
 }
 
 .dark-mode .carousel-button:hover {
@@ -33,6 +20,7 @@
   color: #fff;
   transform: translateY(-50%) scale(1.1);
   box-shadow: 0 12px 40px rgba(102, 126, 234, 0.5);
+  margin: -20px;
 }
 
 .dark-mode .cardProjects {
@@ -285,19 +273,19 @@
 
 .carousel-button {
   position: absolute;
-  top: 15%;
+  top: 50%;
   transform: translateY(-50%);
   border: none;
-  padding: 0.6rem;
+  padding: 0.8rem;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   z-index: 10;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -495,25 +483,11 @@
 
 /* Media Queries para responsividade */
 @media (max-width: 768px) {
-  #projects {
-    padding: 1.5rem;
-  }
-  
-  .carousel {
-    position: relative;
-    margin: 0 auto;
-    max-width: 90%;
-  }
-  
   .carousel-button {
-    width: 35px;
-    height: 35px;
-    padding: 0.5rem;
-    font-size: 1.1rem;
-    background: rgba(0, 0, 0, 0.8);
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    z-index: 15;
-    top: 20%;
+    width: 40px;
+    height: 40px;
+    padding: 0.7rem;
+    font-size: 1.3rem;
   }
   
   .carousel-button.left {
@@ -525,16 +499,13 @@
   }
   
   .cardProjects {
-    width: 90%;
-    max-width: 400px;
-    height: auto;
-    min-height: 600px;
+    width: 360px;
+    height: 720px;
     padding: 1.5rem;
-    margin: 0 auto;
   }
   
   .cardProjects .image {
-    height: 280px;
+    height: 300px;
   }
   
   .cardProjects .text h3 {
@@ -543,70 +514,7 @@
   
   .cardProjects .text p {
     font-size: 1rem;
-    max-height: none;
-  }
-  
-  .cardProjects .github-button {
-    width: 45px;
-    height: 45px;
-    padding: 10px;
-  }
-  
-  .cardProjects .github-button svg {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  #projects {
-    padding: 1rem;
-  }
-  
-  .carousel {
-    position: relative;
-    margin: 0 auto;
-    max-width: 95%;
-  }
-  
-  .carousel-button {
-    width: 32px;
-    height: 32px;
-    padding: 0.4rem;
-    font-size: 1rem;
-    background: rgba(0, 0, 0, 0.9);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    top: 18%;
-  }
-  
-  .carousel-button.left {
-    left: 5px;
-  }
-  
-  .carousel-button.right {
-    right: 5px;
-  }
-  
-  .cardProjects {
-    width: 95%;
-    max-width: 320px;
-    min-height: 550px;
-    padding: 1rem;
-    margin: 0 auto;
-  }
-  
-  .cardProjects .image {
-    height: 220px;
-  }
-  
-  .cardProjects .text h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.8rem;
-  }
-  
-  .cardProjects .text p {
-    font-size: 0.9rem;
-    line-height: 1.4;
+    max-height: 120px;
   }
   
   .cardProjects .github-button {
@@ -621,56 +529,39 @@
   }
 }
 
-/* Extra pequeno - celulares muito pequenos */
-@media (max-width: 375px) {
-  #projects {
-    padding: 0.8rem;
-  }
-  
-  .carousel {
-    position: relative;
-    margin: 0 auto;
-    max-width: 98%;
-  }
-  
+@media (max-width: 480px) {
   .carousel-button {
-    width: 28px;
-    height: 28px;
-    padding: 0.3rem;
-    font-size: 0.9rem;
-    background: rgba(0, 0, 0, 0.9);
-    border: 2px solid rgba(255, 255, 255, 0.6);
-    top: 15%;
+    width: 35px;
+    height: 35px;
+    padding: 0.6rem;
+    font-size: 1rem;
   }
   
   .carousel-button.left {
-    left: 2px;
+    left: 5px;
   }
   
   .carousel-button.right {
-    right: 2px;
+    right: 5px;
   }
   
   .cardProjects {
-    width: 98%;
-    max-width: 280px;
-    min-height: 500px;
-    padding: 0.8rem;
-    margin: 0 auto;
+    width: 340px;
+    height: 700px;
+    padding: 1.25rem;
   }
   
   .cardProjects .image {
-    height: 180px;
+    height: 280px;
   }
   
   .cardProjects .text h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.6rem;
+    font-size: 1.3rem;
   }
   
   .cardProjects .text p {
-    font-size: 0.8rem;
-    line-height: 1.3;
+    font-size: 0.95rem;
+    max-height: 110px;
   }
   
   .cardProjects .github-button {

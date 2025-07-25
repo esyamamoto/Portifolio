@@ -16,6 +16,7 @@ const about = () => {
 
                     <div className="text">
                         <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                            <span>Desenvolvedora Web</span>, apaixonada por tecnologia.
                         </p>
                         <br />
                         <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">

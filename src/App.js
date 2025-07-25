@@ -7,8 +7,6 @@ import About from './components/About';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import ThemeSwitch from './components/ThemeSwitch';
-import LanguageSwitch from './components/LanguageSwitch';
-import './i18n'; // Importa a configuração do i18n
 import './App.css';
 
 function App() {
@@ -43,7 +41,6 @@ function App() {
   return (
     <div>
       <ThemeSwitch theme={theme} toggleTheme={themeSwitch} />
-      <LanguageSwitch />
       <HamburgerMenu />
       <Banner theme={theme} />
       <Project />
