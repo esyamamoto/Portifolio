@@ -4,7 +4,7 @@ Portfólio pessoal desenvolvido em React para apresentar meus projetos, habilida
 
 ## 🚀 Demonstração
 
-**Deploy:** [https://portifolio-azymuk88c-erika-yamamotos-projects.vercel.app/]
+**Deploy:** [[https://portifolio-azymuk88c-erika-yamamotos-projects.vercel.app/](https://portifolio-git-main-erika-yamamotos-projects.vercel.app/)]
 
 ## 📋 Funcionalidades
 
