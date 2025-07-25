@@ -36,7 +36,6 @@ Portfólio pessoal desenvolvido em React para apresentar meus projetos, habilida
     **🔄 Troca dinâmica:** Botão fixo no canto superior direito
     **💾 Persistência:** Salva preferência do usuário no localStorage  
     **🎯 Detecção automática:** Identifica idioma do navegador
-    **📱 Design responsivo:** Switch adaptável para mobile
 
 ### Deploy
 - **Vercel** - Hospedagem e deploy contínuo
