@@ -56,8 +56,11 @@ const ContactForm = () => {
       return;
     }
 
-
-    emailjs.send('gmailMessage', 'template_2fl4u6n', formData, '-v_UQXU1nEuqEiE4T')
+    // Envia o e-mail usando EmailJS
+    // tdaAnk_8XR4h8YYbg -- account ID API keys public
+    // template_1374bgp -- email template ID
+    // service_stt21h2 -- email service ID  
+    emailjs.send('service_stt21h2', 'template_1374bgp', formData, 'tdaAnk_8XR4h8YYbg')
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
       Swal.fire({
@@ -67,12 +70,18 @@ const ContactForm = () => {
         showConfirmButton: false,
         timer: 1500
       });
+      // Limpa o formulário após o envio bem-sucedido
+      //setFormData({
+        //name: '',
+       // email: '',
+       // message: ''
+      //});
     }, (err) => {
       console.error('FAILED...', err);
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Ocorreu um erro ao enviar a mensagem. Tente novamento daqui a alguns minutos',
+        text: 'Ocorreu um erro ao enviar a mensagem. Tente novamente daqui a alguns minutos ou me contate diretamente pelo email.',
       });
     });
 };
@@ -82,7 +91,7 @@ const ContactForm = () => {
       <h2>Me contate:</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Nome:</label>
           <input
             placeholder='Digite seu nome'
             type="text"
@@ -94,7 +103,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Seu email:</label>
           <input
             placeholder='Digite seu email'
             type="email"
@@ -106,7 +115,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message">Mensagem:</label>
           <textarea
             placeholder='Digite sua mensagem'
             id="message"

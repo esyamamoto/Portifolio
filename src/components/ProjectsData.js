@@ -50,7 +50,7 @@ const projectsData = {
     {
         id: 3,
         title: "Password Manager",
-        description: "Uma aplicação em React para gerenciar senhas. Implementa um formulário para cadastrar as informações de acesso de serviços que você usa na internet.",
+        description: "Uma aplicação para gerenciar senhas. Implementa um formulário para cadastrar as informações de acesso de serviços que você usa na internet.",
         image: passwordManager,
         link: "https://github.com/esyamamoto/FRONTEND--Password-Manager",
         github: "https://github.com/esyamamoto/FRONTEND--Password-Manager",
@@ -63,7 +63,7 @@ const projectsData = {
     {
         id: 4,
         title: "Online store",
-        description: "Neste projeto, construimos o Front-End de um e-commerce, uma loja online, alimentada por uma API do Mercado Livre.",
+        description: "Construimos o Front-End de um e-commerce, uma loja online, alimentada por uma API do Mercado Livre.",
         image: onlineStore,
         link: "https://frontend-online-store-nine.vercel.app/",
         github: "https://github.com/esyamamoto/FRONTEND--Online-Store",
@@ -90,7 +90,7 @@ const projectsData = {
     {
         id: 6,
         title: "Star Wars",
-        description: "Uma aplicação que consulta uma API para recuperar dados dos planetas do universo de Star Wars. Onde os dados retornados pela API usei para criar uma tabela com alguns filtros.",
+        description: "Uma aplicação que consulta uma API para recuperar dados dos planetas do universo de Star Wars. Onde os dados retornados cria uma tabela com filtros.",
         image: starWars,
         link: "https://frontend-star-wars.vercel.app/",
         github: "https://github.com/esyamamoto/FRONTEND--Star-Wars",
@@ -130,7 +130,7 @@ const projectsData = {
     {
         id: 9,
         title: "Confira mais projetos no meu GitHub!",
-        description: "Requisições a APIs |  React com Typescript | JavaScript, HTML & CSS | Testes automatizados com React Testing Library | CSS Modules | Gerenciamento de estado com Redux | Context API | Postman | Cypress | Bootstrap",
+        description: "Requisições a APIs | React com Typescript | JavaScript, HTML & CSS | Testes automatizados com RTL | CSS Modules | Context API | Postman | Cypress | Bootstrap",
         image: FRONTEND,
         github: "https://github.com/esyamamoto?tab=repositories&q=FRONT&type=&language=&sort=",
         technologies: [
@@ -141,7 +141,7 @@ backEndProjects: [
     {
         id: 10,
         title: "Projeto Agrotech",
-        description: "AgroTech é uma empresa especializada em tecnologias para melhorar a eficiência no cultivo de plantações 🌱🌳. Isso visa reduzir o desperdício de recursos em geral e de alimentos em específico.",
+        description: "AgroTech é uma empresa onde melhora a eficiência no cultivo de plantações 🌱🌳. Isso visa reduzir o desperdício de recursos em geral e de alimentos em específico.",
         link: " ",
         github: "https://github.com/esyamamoto/BACKEND-AgroTech",
         technologies: [
@@ -154,7 +154,7 @@ backEndProjects: [
     {
         id: 11,
         title: "Restaurant Orders",
-        description: "Restaurante 🍝 Chapa Quente 🍛 Desenvolvi uma solução que permita ao restaurante gerar seus cardápios de maneira simples, considerando possíveis restrições alimentares e a disponibilidade dos ingredientes em estoque. ",
+        description: "Desenvolvi uma solução que permite o restaurante gerar seus cardápios,considerando possíveis restrições alimentares e a disponibilidade em estoque. ",
         image: restaurantOrders,
         github: "https://github.com/esyamamoto/BACKEND--Python-Restaurant-Orders",
         technologies: [
@@ -166,7 +166,7 @@ backEndProjects: [
     {
         id: 12,
         title: "Futebol Clube",
-        description: "O TFC é um site informativo sobre partidas e classificações de futebol. Meu time desenvolveu uma API usando TDD (Test-Driven Development) e integrou as aplicações via Docker Compose, garantindo o consumo correto de um banco de dados. ",
+        description: "O TFC é um site informativo sobre futebol. Meu time desenvolveu uma API usando TDD(Test-Driven Development) e integrou as aplicações via Docker Compose",
         image: futebol,
         github: "https://github.com/esyamamoto/BACKEND--futebol-clube",
         technologies: [
@@ -178,7 +178,7 @@ backEndProjects: [
     {
         id: 13,
         title: "Role Playing Game",
-        description: "Projeto focado em aplicar os princípios SOLID e fundamentos POO em uma estrutura para jogos de RPG 🎲⚔️. O objetivo é criar uma base para gerenciar personagens, habilidades e cenários de forma eficiente.",
+        description: "Projeto que aplica os princípios SOLID e fundamentos POO em uma estrutura para jogos de RPG. O objetivo é criar uma base para gerenciar personagens e cenários.",
         image: rpg,
         github: "https://github.com/esyamamoto/BACKEND--RPG",
         technologies: [
@@ -192,7 +192,7 @@ backEndProjects: [
     {
         id: 14,
         title: "Localizador de Museus",
-        description: "Implementei uma API usando Spring Framework para localizar museus brasileiros com base na localização 🏛️📍. A API identifica o museu mais próximo a partir de dados históricos. ",
+        description: "Implementei uma API usando Spring Framework para localizar museus brasileiros com base na localização.",
         link: " ",
         github: "https://github.com/esyamamoto/BACKEND--JAVA-localizador-de-museus",
         technologies: [
@@ -206,7 +206,7 @@ backEndProjects: [
     {
         id: 15,
         title: "Minha Conta",
-        description: "Implementei uma ferramenta para gestão de consumo energético💡, permitindo que consumidores emitam faturas, estimem gastos mensais, consultem o histórico de pagamentos.",
+        description: "Implementei uma ferramenta para gestão de consumo energético, permitindo que consumidores emitam faturas, estimem gastos mensais, consultem o histórico de pagamentos.",
         link: " ",
         github: "https://github.com/esyamamoto/BACKEND--JAVA-minha-conta",
         technologies: [
@@ -221,7 +221,7 @@ backEndProjects: [
     {
         id: 16,
         title: "Loja itens medievais",
-        description: "Desenvolvi uma API para uma loja de ⚔️itens medievais🛡️, com camadas de Service e Controllers em TypeScript usando Sequelize, incluindo autenticação JWT e testes para assegurar a funcionalidade dos endpoints.",
+        description: "Desenvolvi uma API para uma loja de itens medievais, com camadas de Service e Controllers em TypeScript usando Sequelize, incluindo autenticação JWT e testes para assegurar a funcionalidade dos endpoints.",
         link: " ",
         github: "https://github.com/esyamamoto/BACKEND--Loja-Itens-Medievais",
         technologies: [
@@ -236,7 +236,7 @@ backEndProjects: [
     {
         id: 17,
         title: "Clone Spotify",
-        description: "clone simplificado do banco de dados da Spotify 🎶. O objetivo era aplicar conceitos de normalização para transformar uma estrutura de banco de dados desnormalizada em um modelo eficiente e bem estruturado, seguindo as 1ª, 2ª e 3ª Formas Normais 🧾.",
+        description: "clone simplificado do banco de dados da Spotify 🎶.",
         image: spotifakeSQL,
         github: "https://github.com/esyamamoto/BACKEND--SQL-Spotify",
         technologies: [
@@ -248,7 +248,7 @@ backEndProjects: [
     {
         id: 18,
         title: "Confira mais projetos no meu GitHub!!!",
-        description: "Java | Spring | Python |   Node.js | Express.JS |  ORM |  Docker |  Testes Unitários |  Testes de Integração |  Banco de dados - SQL : MySQL e PostgreSQL | ORM : Sequelize | Deploy | Postman | Cypress",
+        description: "Java | Spring | Python | Node.js | Express.JS | ORM | Docker | Testes Unitários | Testes de Integração | Banco de dados - SQL : MySQL e PostgreSQL | ORM : Sequelize | Deploy | Postman | Cypress",
         image: back,
         github: "https://github.com/esyamamoto?tab=repositories&q=BACK&type=&language=&sort=",
         technologies: [
@@ -278,7 +278,7 @@ fullStackProjects: [
     {
         id: 21,
         title: "e-Commerce",
-        description: "O e-Commerce oferece informações e suporte para descartes e trocas ecológicas, colaborando com empresas e pontos ecológicos para promover o desenvolvimento sustentável.",
+        description: "Oferece informações e suporte para descartes e trocas ecológicas,colaborando com empresas e pontos ecológicos para promover o desenvolvimento sustentável.",
         image: eCommerce,
         link : "https://lumens.netlify.app/#/inicio",
         github: "https://github.com/esyamamoto/Lumens-Front-End",

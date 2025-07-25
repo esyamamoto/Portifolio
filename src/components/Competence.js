@@ -23,7 +23,7 @@ const competenceData = [
     id: 3,
     title: 'Ferramentas, Metodologias e Soft Skills',
     description: 
-    'Git & Github |  Miro | Trello (Kanban + Scrum) | Trabalho em equipe, liderança, adaptabilidade, empatia.',
+    'Git & Github | Miro | Trello (Kanban + Scrum) | Trabalho em equipe, liderança, adaptabilidade, empatia.',
     content: 
     'No âmbito da comunicação e colaboração, estou habituada ao uso de Git & GitHub para controle de versões e colaboração em projetos. Utilizei Miro para brainstorms e visualização de fluxos de trabalho, facilitando a colaboração e o planejamento. Com o Trello, implementei metodologias ágeis como Kanban e Scrum para gerenciar tarefas e sprints, otimizando a produtividade da equipe e garantindo a entrega contínua de valor.',
   },

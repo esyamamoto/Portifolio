@@ -315,7 +315,7 @@
   border-radius: 20px;
   padding: 2rem;
   margin: 10px auto;
-  width: 340px;
+  width: 400px;
   height: 750px;
   position: relative;
   overflow: hidden;
@@ -428,7 +428,7 @@
 }
 
 .technology {
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   padding: 4px 8px;
   border-radius: 8px;
   margin: 1px;
@@ -499,7 +499,7 @@
   }
   
   .cardProjects {
-    width: 320px;
+    width: 360px;
     height: 720px;
     padding: 1.5rem;
   }
@@ -546,7 +546,7 @@
   }
   
   .cardProjects {
-    width: 300px;
+    width: 340px;
     height: 700px;
     padding: 1.25rem;
   }
