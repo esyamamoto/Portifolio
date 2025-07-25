@@ -25,9 +25,18 @@ Portfólio pessoal desenvolvido em React para apresentar meus projetos, habilida
 - **React Router DOM** - Roteamento da aplicação
 - **AOS (Animate On Scroll)** - Animações durante o scroll
 
-### Integrações
+### Integraçõess
 - **EmailJS** - Envio de emails via formulário de contato
 - **SweetAlert2** - Alertas customizados
+
+## Implementacoes futuras
+- **React-i18next** - Internacionalização (Português/Inglês) ✅
+    Funcionalidades de Internacionalização:
+    **🌐 Suporte multilíngue:** Português e Inglês
+    **🔄 Troca dinâmica:** Botão fixo no canto superior direito
+    **💾 Persistência:** Salva preferência do usuário no localStorage  
+    **🎯 Detecção automática:** Identifica idioma do navegador
+    **📱 Design responsivo:** Switch adaptável para mobile
 
 ### Deploy
 - **Vercel** - Hospedagem e deploy contínuo
