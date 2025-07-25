@@ -20,6 +20,21 @@ const Banner = ({ theme }) => {
     }
   }, [theme]);
 
+  useEffect(() => {
+    // Efeito parallax sutil no vídeo
+    const handleScroll = () => {
+      const scrolled = window.pageYOffset;
+      const video = document.querySelector('#home .banner video');
+      if (video && scrolled < window.innerHeight) {
+        const parallax = scrolled * 0.2;
+        video.style.transform = `translateY(${parallax}px)`;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <header id="home">
       <div className="wrapper-home">

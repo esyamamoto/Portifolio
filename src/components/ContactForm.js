@@ -3,9 +3,11 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
+import { useTranslation } from 'react-i18next';
 import '../styles/ContactForm.css';
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -33,7 +35,7 @@ const ContactForm = () => {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Todos os campos devem ser preenchidos!',
+        text: t('nameError'),
       });
       return;
     }
@@ -42,7 +44,7 @@ const ContactForm = () => {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'A mensagem deve ter pelo menos 10 caracteres.',
+        text: t('messageMinLength'),
       });
       return;
     }
@@ -51,7 +53,7 @@ const ContactForm = () => {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'O e-mail fornecido não é válido.',
+        text: t('emailInvalid'),
       });
       return;
     }
@@ -66,7 +68,7 @@ const ContactForm = () => {
       Swal.fire({
         position: "top-end",
         icon: "success",
-        title: "Mensagem enviada com sucesso!",
+        title: t('messageSent'),
         showConfirmButton: false,
         timer: 1500
       });
@@ -81,19 +83,19 @@ const ContactForm = () => {
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Ocorreu um erro ao enviar a mensagem. Tente novamente daqui a alguns minutos ou me contate diretamente pelo email.',
+        text: t('messageError'),
       });
     });
 };
 
   return (
     <section id="contact-form">
-      <h2>Me contate:</h2>
+      <h2>{t('contactTitle')}</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="name">Nome:</label>
+          <label htmlFor="name">{t('name')}</label>
           <input
-            placeholder='Digite seu nome'
+            placeholder={t('namePlaceholder')}
             type="text"
             id="name"
             name="name"
@@ -103,9 +105,9 @@ const ContactForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="email">Seu email:</label>
+          <label htmlFor="email">{t('email')}</label>
           <input
-            placeholder='Digite seu email'
+            placeholder={t('emailPlaceholder')}
             type="email"
             id="email"
             name="email"
@@ -115,9 +117,9 @@ const ContactForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="message">Mensagem:</label>
+          <label htmlFor="message">{t('message')}</label>
           <textarea
-            placeholder='Digite sua mensagem'
+            placeholder={t('messagePlaceholder')}
             id="message"
             name="message"
             value={formData.message}
@@ -125,7 +127,7 @@ const ContactForm = () => {
             required
           ></textarea>
         </div>
-        <button type="submit" className="submit-button">Send</button>
+        <button type="submit" className="submit-button">{t('send')}</button>
       </form>
     </section>
   );
